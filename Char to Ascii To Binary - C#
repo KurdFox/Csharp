@@ -1,0 +1,19 @@
+            
+            char ch = char.Parse(textBox1.Text);
+            int num;
+            string s = "";
+            num = (int)ch;
+            textBox2.Text = num.ToString();
+            while(num!=0)
+            {
+                s = (num % 2) + s;
+                num = num / 2;
+            }
+            for(int i=s.Length; i<8; i++)
+            {
+                s = 0 + s;
+            }
+            textBox3.Text = s;
+            
+            
+            
