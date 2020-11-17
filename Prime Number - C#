@@ -1,0 +1,26 @@
+
+            bool flag = true;
+            
+            int num = int.Parse(textBox1.Text);
+            if (num == 1)
+            {
+                MessageBox.Show("It is NOT Prime Numbe");
+            }
+            else
+            {
+                for (int i = 2; i < num - 1; i++)
+                {
+                    if (num % i == 0)
+                    {
+                        flag = false;
+                    }
+                }
+            }
+            if (flag == true)
+            {
+                MessageBox.Show("It is Prime Number");
+            }
+            else
+            {
+                MessageBox.Show("It is NOT Prime Number");
+            }
