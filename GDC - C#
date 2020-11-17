@@ -1,0 +1,11 @@
+            
+            int a = int.Parse(textBox1.Text);
+            int b = int.Parse(textBox2.Text);
+            int r = a % b;
+            while (r != 0)
+                {
+                    a = b;
+                    b = r;
+                    r = a % b;
+                }
+            textBox3.Text =b.ToString();
